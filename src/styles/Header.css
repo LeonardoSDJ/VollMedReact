@@ -1,0 +1,34 @@
+.div header{
+  background-color: #007bff;
+}
+.custom-navbar {
+    border-bottom: 2px solid #0254a5;
+    padding: 10px 20px;
+  }
+  
+  .custom-navbar .project-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+  
+  .custom-navbar .project-name:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
