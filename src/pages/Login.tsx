@@ -102,7 +102,7 @@ export default function SignIn({ onLogin }: SignInProps) {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="http://localhost:5173/cadastro-usuario" variant="body2">
                   {"Não possui uma conta? Cadastre-se!"}
                 </Link>
               </Grid>

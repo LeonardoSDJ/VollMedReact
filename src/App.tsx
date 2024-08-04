@@ -7,6 +7,7 @@ import ListagemDeMedicos from './components/ListagemDeMedicos';
 import Home from './pages/Home';
 import CadastroPacientes from './pages/CadastroPacientes';
 import AgendamentoTarefas from './pages/AgendamentoTarefas';
+import FormularioUsuario from './pages/FormularioUsuario';
 import SignIn from './pages/Login';
 import './styles/App.css';
 
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <div className="content">
             <Routes>
               <Route path="/login" element={<SignIn onLogin={() => setIsAuth(true)} />} />
+              <Route path="/cadastro-usuario" element={<FormularioUsuario fetchUsuario={() => {}} />} />
               <Route path="/" element={isAuth ? <Home /> : <Navigate to="/login" />} />
               <Route path="/cadastrar-medico" element={isAuth ? <FormularioMedico fetchMedicos={() => {}} /> : <Navigate to="/login" />} />
               <Route path="/listar-medicos" element={isAuth ? <ListagemDeMedicos /> : <Navigate to="/login" />} />
